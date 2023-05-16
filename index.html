@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página principal</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <!--<button id="alumnos">ALUMNOS</button><br> -->
+    <h1>BASE DE DATOS</h1>
+    
+    <table id="tabla">
+        <thead>
+          <tr>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Edad</th>
+            <th>Materias</th>
+            <th>Calificación</th>
+          </tr>
+        </thead>
+        <tbody id="tabla-body"></tbody>
+      </table>
+
+    <button id="agregar">AGREGAR ALUMNO(S)</button>
+
+    <div class="alta hidden">
+        <label for="aluname">Nombre:</label><br>
+        <input type="text" id="aluname" name="aluname"><br>
+        <label for="alulastname">Apellido:</label><br>
+        <input type="text" id="alulastname" name="alulastname"><br>
+        <label for="aluage">Edad:</label><br>
+        <input type="text" id="aluage" name="aluage"><br>
+        <button id="btnAlta">Dar de alta</button>
+    </div>
+
+<!--ASIGNAR CALIFICACIONES Y MATERIAS-->
+    <div class="diseño">
+      <h2>Alumnos</h2>
+      <label for="alumnos-list">Nombre del alumno:</label>
+      <input type="text" id="alumnos-list">
+    </div>
+    
+    <div class="diseño">
+      <h2>Asignar Materia</h2>
+      <label for="materia">Materia:</label>
+      <select id="materia">
+        <option value="">Seleccionar Materia</option>
+        <option value="Inglés">Inglés</option>
+        <option value="Literatura">Literatura</option>
+        <option value="Historia">Historia</option>
+        <option value="Ecología">Ecología</option>
+        <option value="Comercio">Comercio</option>
+        <option value="Administración">Administración</option>
+      </select>
+    
+      <button id="inscribirMateria">Inscribir Materia</button>
+    </div>
+    
+    <div class="diseño">
+      <h2>Asignar Calificación</h2>
+      <label for="calificacion">Calificación:</label>
+      <select id="calificacion">
+        <option value="">Seleccionar Calificación</option>
+        <option value="0">0</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+      </select>
+    
+      <button id="asignarCalificacion">Asignar Calificación</button>
+    </div>
+
+    <button id="botonBuscar">Buscar alumno</button><br>
+    
+    <div class="diseñoNuevo hidden">
+      <label for="buscarAlumno">Nombre del alumno:</label>
+      <input type="text" id="buscarAlumno">
+      <button id="btnBuscar">Buscar</button>
+      <p id="mostrarAlumno"></p>
+    </div>
+
+   
+    <script src="./src/main.js"></script>
+</body>
+</html>
